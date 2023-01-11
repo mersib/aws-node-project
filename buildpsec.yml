@@ -1,0 +1,13 @@
+version: 0.2
+env:
+  secrets-manager:
+    /database/testdb/endpoint: secret-id:json-key:version-stage:version-id
+
+phases:
+  intsall:
+    runtime-versions:
+      node: 18
+    commands: -npm install
+  build:
+    commands:
+      - npx prisma migrate dev
