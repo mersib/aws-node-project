@@ -2,7 +2,7 @@ org: mersib
 app: aws-node-express-api
 service: aws-node-project
 
-frameworkVersion: '3'
+frameworkVersion: '2'
 
 provider:
   name: aws
